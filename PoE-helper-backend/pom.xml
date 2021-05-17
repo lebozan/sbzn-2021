@@ -79,12 +79,12 @@
 			<version>7.17.0.Final</version>
 		</dependency>
 
-<!--		<dependency>-->
-<!--			<groupId>sbnz.projekat</groupId>-->
-<!--			<artifactId>poe-helper-kjar</artifactId>-->
-<!--			<type>jar</type>-->
-<!--			<version>0.0.1-SNAPSHOT</version>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>sbnz.projekat</groupId>
+			<artifactId>poe-helper-kjar</artifactId>
+			<type>jar</type>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

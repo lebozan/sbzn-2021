@@ -31,7 +31,7 @@ public class UserInputController {
 
     @PostMapping(value = "/firstEntry")
     public ResponseEntity<?> firstEntry(@RequestBody FirstEntryDTO firstEntryDTO) {
-        KieSession kieSession = kieContainer.newKieSession();
+        KieSession kieSession = kieContainer.newKieSession("ksession-rules");
         try {
             Build newBuild = new Build();
             for (String gem : firstEntryDTO.getSkillSetup()) {
@@ -44,7 +44,7 @@ public class UserInputController {
                 for (String tag : sg.getGemTags()) {
                     Tag t = new Tag(tag);
 
-//                    System.out.println(t);
+                    System.out.println(t);
                     kieSession.insert(t);
 
                 }
